@@ -1,0 +1,86 @@
+.body {
+    background-color: #ffcbcb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    padding: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8b400;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+    border-bottom: 2px solid #f8b400;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Profile Image Styling */
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* Card Hover Effect */
+.card {
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Animated Progress Bars */
+.progress-bar {
+    animation: progressAnimation 1.5s ease-in-out;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+}
+
+/* Fade-in Animation for Sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInEffect 1s ease-in-out forwards;
+}
+
+@keyframes fadeInEffect {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add fade-in effect to all sections */
+#home, #education, #projects, #contact {
+    animation: fadeInEffect 1s ease-in-out forwards;
+}
